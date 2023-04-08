@@ -1,0 +1,91 @@
+/* STYLLING THE HEADER COMPONENT */
+
+#mainContainer{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-image: linear-gradient(rgb(252, 235, 235), rgb(138, 138, 147));
+    height: 10vh;
+}
+.navLink li{
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.navLink li a{
+    text-decoration: none;
+    color: black;
+}
+.navLink li a:hover{
+    color: white;
+}
+
+.navLink li:hover{
+   background-color: grey;
+   
+}
+
+.navLink{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+/* stylling toggle button */
+.toggle-bar{
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+}
+
+.toggle-bar .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+/* MEDIA QUERIES FOR TOGGLE BUTTON */
+
+@media screen and (max-width: 380px){
+    .toggle-bar{
+        display: flex;
+    }
+
+    ul li{
+        /* background-color: red; */
+        /* display: none !important; */
+        visibility: hidden;
+        
+    }
+
+    .navLink{
+        flex-direction: column;
+        text-align: center;
+       height: 30vh;
+    }
+
+    .navLink li{
+        margin: 0;
+        margin-right: 20px;
+        
+    }
+
+    .navLink li.active{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .navLink li{
+        font-size: .6em;
+    }
+}

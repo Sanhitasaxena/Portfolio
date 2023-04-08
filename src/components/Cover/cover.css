@@ -1,0 +1,26 @@
+#mainContainerCover{
+    height: 60vh;
+    align-items: center;
+    display: flex;
+}
+
+#content{
+    margin: auto;
+    width: 50%;
+    /* background-color: red; */
+    text-align: center;
+    /* margin-top: 7%; */
+}
+
+#content h1{
+    font-family: 'League Spartan';
+    /* font-size: large; */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 400px){
+    #content{
+        width: 80%;
+    }
+}

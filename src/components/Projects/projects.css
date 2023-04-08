@@ -1,0 +1,42 @@
+#projects{
+    /* background-image: linear-gradient( rgb(138, 138, 147), rgb(252, 235, 235)); */
+    margin-top: 50px;
+}
+
+#project1, #project2, #project3{
+    margin-top: 1rem;
+    padding: 10px;
+}
+
+#projectsHead{
+    font-family: 'League Spartan';
+}
+
+/* #project1-desc, #project2-link, #project3-desc{
+    position: relative;
+    animation: mymove 5s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes mymove {
+    from {left: -150px;}
+    to {left: 45px;}
+  }
+
+#project3-link, #project2-desc, #project1-link{
+    position: relative;
+    animation: mymove 5s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes mymove {
+    from {right: -150px;}
+    to {right: 45px;}
+  }   */
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 430px){
+    #project1, #project2, #project3{
+        flex-direction: column;
+    }
+}

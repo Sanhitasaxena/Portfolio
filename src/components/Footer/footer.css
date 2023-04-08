@@ -1,0 +1,89 @@
+#footerIconList{
+    list-style: none;
+    /* height: 50vh; */
+  }
+  
+  #footerMainContainer{
+    background-image: linear-gradient(white, rgb(197, 193, 193));
+    margin-top: -1.5em;
+    padding: 30px;
+    /* height: 40vh; */
+  }
+  
+  #footerMainContainer h4{
+    font-family: 'League Spartan';
+  }
+
+  #footerEmail, #footerFollowUs, #footerCallUs label{
+    font-weight: 700;
+  }
+  
+  #footerEmail input{
+    padding: 8px;
+    border: 2px solid black;
+    background: transparent;
+    color: white;
+    outline: none;
+  }
+  
+  #footerFollowUs span{
+    padding: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+  
+  }
+  
+  #footerFollowUs span:hover{
+    animation: bounce linear infinite;
+  }
+  
+  
+  @keyframes bounce {
+     0% {
+        opacity: 0;
+        transform: translateX(2000px);
+     }
+     60% {
+        opacity: 1;
+        transform: translateX(-30px);
+     }
+     80% {
+        transform: translateX(10px);
+     }
+     100% {
+        transform: translateX(0);
+     }
+  } 
+  
+  
+  #footerEmail button{
+    margin: 5px;
+    padding: 8px;
+    border: 2px solid brown;
+    background-color: rgb(181, 55, 55);
+    color: white;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #footerEmail button:hover{
+    background-image: linear-gradient(rgb(160, 129, 129), rgb(181, 55, 55));
+  }
+
+  #footerContent{
+    width: 30%;
+  }
+
+  @media screen and (max-width: 400px){
+    #footerContactDetails{
+        flex-direction: column;
+    }
+    #footerContactDetails div{
+        width: 80%;
+    }
+
+    /* #footerContent{
+        width: 0px;
+    } */
+  }
+  

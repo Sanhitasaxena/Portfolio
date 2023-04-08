@@ -1,18 +1,22 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import About from "../components/About";
-import Projects from "../components/Projects";
+import About from "../components/About/About";
+import Projects from "../components/Projects/Projects";
+import Cover from "../components/Cover/Cover"
 
 const PrimaryRoutes = () => {
   return (
     <>
       <Switch>
-        <Route path="/projects">
+        <Route exact path="/projects">
           <Projects />
         </Route>
-        <Route path="/about">
+        <Route exact path="/about">
           <About />
         </Route>
+        {/* <Route path="/">
+          <Cover />
+        </Route> */}
       </Switch>
     </>
   );

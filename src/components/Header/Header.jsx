@@ -1,7 +1,7 @@
 import React from "react";
-import { ReactDOM } from "react";
+// import { ReactDOM } from "react";
 import { Link } from "react-router-dom";
-
+import "../Header/header.css"
 
 const Header = ()=>{
 
@@ -15,10 +15,12 @@ const Header = ()=>{
             </a>
          <div id="navlist">
          <ul className="navLink">
-            <li><Link to = "/">Home</Link></li>
-            <li><Link to = "/projects">My Projects</Link></li>
-            <li><Link to = "/about">About me</Link></li>
-            <li><Link to = "#contact">Contact me</Link></li>
+            <li><a href = "/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href = "#projects">Projects</a></li>
+            <li><a href = "#skills-parent">Skills</a></li>
+            <li><a href = "#exp-main">Experience</a></li>
+            <li><a href = "#contact">Download Resume</a></li>
         </ul>
          </div>
         </div>

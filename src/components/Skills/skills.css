@@ -1,0 +1,73 @@
+/* FRONTEND COMPONENT STYLLING */
+.card{
+    width: 80%;
+    /* margin-left: 16px; */
+    align-items: center;
+    padding: 6px;
+    border-radius: 15px;
+}
+
+#parent{
+    align-items: center;
+}
+
+#parentAll{
+    overflow-x: hidden;
+    padding: 3rem;
+}
+
+#skills{
+    font-family: 'League Spartan';
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 770px){
+    #parentAll{
+        overflow-x: hidden;
+        padding-left: 5rem; 
+        /* padding: 3rem; */
+    }
+
+    .card{
+        width: 97%;
+    }
+}
+
+@media screen and (max-width: 430px){
+    #parentAll{
+        overflow-x: hidden;
+        padding-left: 3rem; 
+        /* padding: 3rem; */
+    }
+
+    /* #parent{
+       width: 100%;
+    } */
+
+    .card{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 430px){
+    #parentAll{
+        overflow-x: hidden;
+        padding-left: 3rem; 
+        /* padding: 3rem; */
+    }
+
+    /* #parent{
+       width: 100%;
+    } */
+
+    .card{
+        width: 111%;
+    }
+}
+
+#skills-parent{
+    background-image: url("../../assets/img/background/skill-bg.jpg");
+    /* background-size: cover; */
+    background-blend-mode: lighten;
+    color: white;
+}
