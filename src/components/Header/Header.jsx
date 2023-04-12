@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import "../Header/header.css"
 
 const Header = ()=>{
-
     return(
         <>
         <div id="mainContainer" className="container-fluid">
@@ -20,7 +19,8 @@ const Header = ()=>{
             <li><a href = "#projects">Projects</a></li>
             <li><a href = "#skills-parent">Skills</a></li>
             <li><a href = "#exp-main">Experience</a></li>
-            <li><a href = "#contact">Download Resume</a></li>
+            <li><a href = "resume/Updated-resume-sanhita.pdf"
+            download="Updated-resume-sanhita.pdf">Download Resume</a></li>
         </ul>
          </div>
         </div>

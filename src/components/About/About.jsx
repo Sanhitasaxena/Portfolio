@@ -7,7 +7,10 @@ const About = () => {
       <div id="about">
         <h2 className="text-center p-3">ABOUT ME</h2>
         <div className="row d-flex justify-content-evenly" id="aboutcontent">
-          <div className="col-md-5 d-flex align-items-center" id="textAbout">
+          {/* <div className="bg-img">this is bg image</div> */}
+
+        </div>
+        <div className="col-md-5 d-flex align-items-center" id="textAbout">
             <div id="Abouttext">
               <p>
                 Hi, I'm a trained MERN stack developer who is more interested to
@@ -33,13 +36,8 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div id="aboutPhoto" className="col-md-5">
-            <p>this is phto</p>
-          </div>
-        </div>
       </div>
     </>
-    
   );
 };
 

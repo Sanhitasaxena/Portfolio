@@ -7,6 +7,24 @@
     font-family: 'League Spartan';
 }
 
+#aboutcontent{
+    background-color: red;
+    background-image: url("../../assets/img/background/pr-bg-2.jpg");
+    
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    
+    /* Full height */
+    height: 600px; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
 #textAbout, #aboutPhoto{
     background-color: rgb(242, 240, 240);
     border: 1px solid rgb(68, 67, 67);
@@ -24,10 +42,30 @@
     transform: scale(1.1); 
 }
 
+#textAbout{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 133%;
+    left: 30%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 2;
+    /* width: 80%; */
+    padding: 20px;
+    text-align: center;
+}
 
 /* #aboutPhoto{
     background-color: peachpuff;
 } */
+
+
+  /* .bg-img{
+    background-color: red;
+  } */
 
 @media screen and (max-width: 770px){
     #aboutcontent{
