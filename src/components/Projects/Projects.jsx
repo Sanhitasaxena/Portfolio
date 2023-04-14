@@ -5,6 +5,9 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { Image } from "@mui/icons-material";
+import {ProjectsData} from "../../data/projects/projects"
+// import weatherImg from "../../assets/img/projects/weather-app.png"
 
 const Projects = () => {
   return (
@@ -14,23 +17,40 @@ const Projects = () => {
           PROJECTS
         </h2>
         <VerticalTimeline>
-          <VerticalTimelineElement 
-          date="DOM APP"
-          >
-            <div id="project1" className="row">
-              <div className="col-md-5" id="project1-desc">
-                <h2>WEATHER APPLICATION</h2>
-                <p>
-                  An app based on DOM manipulation. 
-                  A basic javascript implementation!
-                </p>
+          {ProjectsData.map(item => {
+              return(
+                <>
+                <VerticalTimelineElement date={item.techStack}>
+              <div id="project1">
+                <div className="col-md-5" id="project1-desc">
+                  <h2 className="text-center">{item.name}</h2>
+                  {/* <p>
+                    An app based on DOM manipulation. 
+                    A basic javascript implementation!
+                  </p> */}
+                  <Image
+                    src={
+                      require("../../assets/img/projects/weather-app.png").default
+                    }
+                    height="80px"
+                    width="80px"
+                  />
+                </div>
+                <div id="project1-link" className="row">
+                  <a href={item.live}>
+                    VISIT WEBSITE
+                  </a>
+                  <a href={item.sourceCode}>
+                     SOURCE CODE
+                  </a>
+                </div>
               </div>
-              <div className="col-md-5" id="project1-link">
-                <a href="https://sanhitasaxena.github.io/Get-Weather/">VISIT WEBSITE</a>
-              </div>
-            </div>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement 
+            </VerticalTimelineElement>
+                </>
+              )
+          })}
+          
+          {/* <VerticalTimelineElement 
           date="HTML & CSS">
             <div id="project2" className="row d-flex justify-content-around">
               <div className="col-md-5" id="project2-link">
@@ -44,8 +64,8 @@ const Projects = () => {
                 </p>
               </div>
             </div>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement 
+          </VerticalTimelineElement> */}
+          {/* <VerticalTimelineElement 
           date="MERN STACK">
             <div id="project3" className="row d-flex justify-content-around">
               <div className="col-md-5" id="project3-desc">
@@ -59,8 +79,8 @@ const Projects = () => {
                 <a href="#">VISIT WEBSITE</a>
               </div>
             </div>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement 
+          </VerticalTimelineElement> */}
+          {/* <VerticalTimelineElement 
           date="REACTJS">
             <div id="project3" className="row d-flex justify-content-around">
             <div className="col-md-5" id="project3-link">
@@ -75,8 +95,8 @@ const Projects = () => {
               </div>
              
             </div>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement 
+          </VerticalTimelineElement> */}
+          {/* <VerticalTimelineElement 
           date="DOM Manipulation">
             <div id="project3" className="row d-flex justify-content-around">
             <div className="col-md-5" id="project3-desc">
@@ -88,12 +108,11 @@ const Projects = () => {
               </div>
             <div className="col-md-5" id="project3-link">
                 {/* Do visit the project<br/> */}
-                <a href="https://sanhitasaxena.github.io/add-friends-app/">VISIT WEBSITE</a>
-              </div>
-              
-             
-            </div>
-          </VerticalTimelineElement>
+          {/* <a href="https://sanhitasaxena.github.io/add-friends-app/">VISIT WEBSITE</a>
+              </div> */}
+
+          {/* </div> */}
+          {/* </VerticalTimelineElement> */}
         </VerticalTimeline>
       </div>
     </>
