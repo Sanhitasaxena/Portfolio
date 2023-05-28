@@ -1,5 +1,5 @@
 #projects{
-    /* background-image: linear-gradient( rgb(138, 138, 147), rgb(252, 235, 235)); */
+    background-image: linear-gradient( rgb(138, 138, 147), rgb(252, 235, 235));
     margin-top: 50px;
     /* background-color: red; */
    background-image: url("../../assets/img/background/pr-bg-3.webp");
@@ -7,6 +7,7 @@
    background-size: cover;
    color: white;
 }
+
 
 #project1, #project2, #project3{
     margin-top: 1rem;

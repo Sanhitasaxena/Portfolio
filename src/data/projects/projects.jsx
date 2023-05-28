@@ -3,13 +3,15 @@ export const ProjectsData = [
       "name": "Weather Application",
        "live": "https://sanhitasaxena.github.io/Get-Weather/",
        "sourceCode": "https://github.com/Sanhitasaxena/Get-Weather",
-       "techStack": "DOM Manipulation" 
+       "techStack": "DOM Manipulation" ,
+       "img": require("../../assets/img/projects/weather-app.png")
     },
     {
       "name": "ADD FRINDS APP",
        "live": "https://sanhitasaxena.github.io/Get-Weather/",
        "sourceCode": "https://github.com/Sanhitasaxena/Get-Weather",
-       "techStack": "DOM Manipulation"  
+       "techStack": "DOM Manipulation",
+       "img": require("../../assets/img/projects/add-frinds.png")  
     },
     {
       "name": "WEBSITE CLONE",
@@ -27,6 +29,7 @@ export const ProjectsData = [
       "name": "PORTFOLIO",
        "live": "https://sanhitasaxena.github.io/Get-Weather/",
        "sourceCode": "https://github.com/Sanhitasaxena/Portfolio" ,
-       "techStack": "REACT JS" 
+       "techStack": "REACT JS",
+       "img": require("../../assets/img/projects/portfolio.png")
     },
 ]

@@ -5,9 +5,8 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { Image } from "@mui/icons-material";
+// import { Image } from "@mui/icons-material";
 import {ProjectsData} from "../../data/projects/projects"
-// import weatherImg from "../../assets/img/projects/weather-app.png"
 
 const Projects = () => {
   return (
@@ -29,12 +28,13 @@ const Projects = () => {
                     An app based on DOM manipulation. 
                     A basic javascript implementation!
                   </p> */}
-                  <Image
+                  <img
                     src={
-                      require("../../assets/img/projects/weather-app.png").default
+                      item.img
                     }
                     height="80px"
                     width="80px"
+                    alt="img logo"
                   />
                 </div>
                 <div id="project1-link" className="row">
