@@ -5,8 +5,9 @@ const About = () => {
   return (
     <>
       <div id="about">
-        <h2 className="text-center p-3">ABOUT ME</h2>
+        
         <div className="row d-flex justify-content-evenly" id="aboutcontent">
+        <h2 className="text-center p-3">ABOUT ME</h2>
           {/* <div className="bg-img">this is bg image</div> */}
 
         </div>

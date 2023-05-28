@@ -12,9 +12,10 @@ import {ProjectsData} from "../../data/projects/projects"
 const Projects = () => {
   return (
     <>
+    
       <div className="container-fluid" id="projects">
         <h2 className="text-center p-2" id="projectsHead">
-          PROJECTS
+        PROJECTS
         </h2>
         <VerticalTimeline>
           {ProjectsData.map(item => {
