@@ -31,6 +31,10 @@ const MyTitleMessage = styled.h1`
       font-weight: bold;
     }
 
+    .about{
+      font-size: 30px
+    }
+
     .sub {
       font-size: 27px;
       letter-spacing: 2px;
@@ -43,10 +47,11 @@ const TitleMessage = () => (
     <div className="titleMessage">
       <div className="heading">
         <div className="main text-center mb-3">
-          Hi, I am <strong>Sanhita</strong>
+          Hi, I am <strong>Sanhita...</strong>
           <br />
-          <span>I develop websites..</span>
+          <p className="about">MERN Stack dev || Aspiring Mentor</p>
         </div>
+        
         <div className="contact-button">
         {/* <FloatButtons/> */}
         </div>
