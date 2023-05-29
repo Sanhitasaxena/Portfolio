@@ -17,7 +17,7 @@ function App() {
      <Header/>
      <MyCarousel/>
      <TitleMessage/>
-     <About/>
+     {/* <About/> */}
      <Projects/>
      <Skills/>
      <Experience/>

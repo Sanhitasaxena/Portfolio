@@ -1,13 +1,13 @@
 export const ProjectsData = [
     {
-      "name": "Weather Application",
+      "name": "WEATHER APPLICATION",
        "live": "https://sanhitasaxena.github.io/Get-Weather/",
        "sourceCode": "https://github.com/Sanhitasaxena/Get-Weather",
        "techStack": "DOM Manipulation" ,
        "img": require("../../assets/img/projects/weather-app.png")
     },
     {
-      "name": "ADD FRINDS APP",
+      "name": "ADD FRIENDS APP",
        "live": "https://sanhitasaxena.github.io/Get-Weather/",
        "sourceCode": "https://github.com/Sanhitasaxena/Get-Weather",
        "techStack": "DOM Manipulation",

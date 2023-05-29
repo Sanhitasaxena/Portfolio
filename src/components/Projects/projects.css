@@ -1,5 +1,5 @@
 #projects{
-    background-image: linear-gradient( rgb(138, 138, 147), rgb(252, 235, 235));
+    /* background-image: linear-gradient( rgb(138, 138, 147), rgb(252, 235, 235)); */
     margin-top: 50px;
     /* background-color: red; */
    background-image: url("../../assets/img/background/pr-bg-3.webp");
@@ -8,15 +8,44 @@
    color: white;
 }
 
+#project1 h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
 
 #project1, #project2, #project3{
     margin-top: 1rem;
     padding: 10px;
-    color: black;
+    /* color: black; */
+}
+
+#project1-link a{
+    /* background-color: #013D46; */
+    outline: #013D46;
+}
+
+.btn-primary{
+    background-color: #013D46;
+}
+
+.btn-primary:hover{
+  background-color: transparent !important;
+  border: 1px solid #013D46;
+  color: black;
+  
+}
+
+.vertical-timeline-element-content{
+    background-color: red;
+    /* box-shadow: 5px 5px ; */
 }
 
 #projectsHead{
     font-family: 'League Spartan';
+}
+
+.visit-project{
+   margin-left: 50px; 
 }
 
 /* #project1-desc, #project2-link, #project3-desc{
@@ -49,4 +78,14 @@
     #project1, #project2, #project3{
         flex-direction: column;
     }
+
+    #project1-link a{
+        width: 100%;
+    }
+
+    #project1 h2{
+        font-size: large;
+        font-weight: bold;
+    }
 }
+

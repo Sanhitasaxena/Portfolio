@@ -1,7 +1,7 @@
 import React from "react";
 // import Typewriter from "typewriter-effect";
 import styled from "styled-components";
-import FloatButtons from "../float-buttons/float-button";
+// import FloatButtons from "../float-buttons/float-button";
 import "../title-msg/title-msg.css";
 
 
@@ -48,7 +48,7 @@ const TitleMessage = () => (
           <span>I develop websites..</span>
         </div>
         <div className="contact-button">
-        <FloatButtons/>
+        {/* <FloatButtons/> */}
         </div>
       </div>
     </div>
