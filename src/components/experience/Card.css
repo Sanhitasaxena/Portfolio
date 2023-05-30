@@ -64,7 +64,15 @@
   /* background-blend-mode: lighten; */
 }
 
-/* wave css */
+/* media query for modal */
+@media (max-width: 430px) and (min-width: 374){
+  #modal-container{
+    margin-top: 35%;
+    width: 70%;
+    margin-left: 5%;
+    padding: 20px;
+  }
+}
 
 
 

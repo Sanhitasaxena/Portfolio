@@ -55,7 +55,7 @@
 
 /* MEDIA QUERIES FOR TOGGLE BUTTON */
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 430px){
     .toggle-bar{
         display: flex;
     }
@@ -84,8 +84,8 @@
     }
 }
 
-@media screen and (max-width: 430px){
+/* @media screen and (max-width: 430px){
     .navLink li{
         font-size: .6em;
     }
-}
+} */
