@@ -37,7 +37,7 @@ const Card = (props) => {
                 {props.experience}
               </Modal.Body>
             </Modal>
-            <Button className="btn" variant="outline-dark" id="desc-btn"
+            <Button className="btn" variant="outline-light" id="desc-btn"
             onClick={handleShow} >DESCRIPTION</Button>
           </div>
         </div>

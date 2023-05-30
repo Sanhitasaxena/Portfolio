@@ -11,7 +11,7 @@ const SlideShow = () => {
   return (
     <>
       <div id="parent">
-        <Carousel variant="dark">
+        <Carousel variant="light">
           <Carousel.Item>
             <Card
               name="The youth Project"
