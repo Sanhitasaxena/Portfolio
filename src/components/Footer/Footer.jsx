@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <div id="footerMainContainer" className="container-fluid">
-        <h4 className="text-center">HOPING TO ADD MORE INTERESTING EXPERINECES TO THE JOURNEY</h4>
+        <h4 className="text-center footer-text">HOPING TO ADD MORE INTERESTING EXPERINECES TO THE JOURNEY</h4>
         <ScrollToTop smooth />
       </div>
     </>

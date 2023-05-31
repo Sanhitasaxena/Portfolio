@@ -2,9 +2,9 @@ import React from "react";
 import Card from "./Card";
 import Carousel from "react-bootstrap/Carousel";
 import "../experience/Card.css";
-import typLogo from "../../assets/icons/typLogo.png";
-import grapeVineLogo from "../../assets/icons/grapeVineLogo.png";
-import bbLogo from "../../assets/icons/bbLogo.webp";
+import typnew from "../../assets/img/experience/typ3.png"
+import bbnew from "../../assets/img/experience/bb2.jpg"
+import gvnew from "../../assets/img/experience/gv2.png"
 
 const SlideShow = () => {
   // console.log(props.slide)
@@ -14,9 +14,9 @@ const SlideShow = () => {
         <Carousel variant="light">
           <Carousel.Item>
             <Card
-              name="The youth Project"
+              name="The Youth Project"
               designation="Frontend developer"
-              image={typLogo}
+              image={typnew}
               experience={`"During my time as a frontend developer, I got the 
             opportunity to work with the industry experts and gain knowledge. 
             I worked with Reactjs to integrate the APIs as well as mapping the data. 
@@ -28,9 +28,9 @@ const SlideShow = () => {
 
           <Carousel.Item>
             <Card
-              name="The youth Project"
+              name="The Youth Project"
               designation="Business development executive"
-              image={typLogo}
+              image={typnew}
               experience={`"Coming from a tech background, it was a bit tricky for me
               to work in a non-technical profile. However, as a part of my role, I was responsible
               for setting up the company's network with the clients and client companies. 
@@ -44,7 +44,7 @@ const SlideShow = () => {
             <Card
               name="GrapeVine"
               designation="Campus Ambassador"
-              image={grapeVineLogo}
+              image={gvnew}
               experience={`"Being a Campus Ambassador, I overcomed my fear of the people's 
               judgement(log kya khaenge) as it included tasks of creating the videos and posting
               it on social media. To be part here, helped me interact with a number of people
@@ -60,7 +60,7 @@ const SlideShow = () => {
             <Card
               name="Byte Brackets"
               designation="Reactjs Intern"
-              image={bbLogo}
+              image={bbnew}
               experience={`"Though it was a comparetively short span of time at Byte Brackets,
               it definetly taught me many things. I learnt to handle work pressure(pretty well).
               I worked with React to develop the UI and embed it with functionalities.

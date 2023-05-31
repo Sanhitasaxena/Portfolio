@@ -13,13 +13,11 @@ const DbAndOthers = () => {
           <div class="card-body">
             <h5 class="card-title">MONGODB</h5>
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              MongoDB is a popular open-source document-oriented NoSQL database
+              that provides high scalability, flexibility, and performance for
+              modern applications.
             </p>
-            <Image 
-            src={mongoDb}
-            height="70px"
-            width="70px"></Image>
+            <Image src={mongoDb} height="70px" width="70px"></Image>
           </div>
         </div>
       </div>
