@@ -1,12 +1,16 @@
 import React from "react";
+// import Navbar from "./navbar";
 // import { ReactDOM } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "../Header/header.css"
+import MyNavbar from "./navbar";
 
 const Header = ()=>{
     return(
         <>
-        <div id="mainContainer" className="container-fluid">
+        <MyNavbar/>
+        {/* <Navbar/> */}
+        {/* <div id="mainContainer" className="container-fluid">
             <a href="#" className="toggle-bar">
                 <span className="bar"></span>
                 <span className="bar"></span>
@@ -23,7 +27,7 @@ const Header = ()=>{
             download="Updated-resume-sanhita.pdf">Download Resume</a></li>
         </ul>
          </div>
-        </div>
+        </div> */}
         </>
     )
 }
