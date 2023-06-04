@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Twirl as Hamburger } from 'hamburger-react'
 
 export const NavbarContainer = styled.nav`
 width: 100%;
@@ -21,8 +22,13 @@ export const NavMenu = styled.ul`
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  padding-top: 20px;
+  position: relative;
+  top: 20px;
+  left: 50px;
+  /* padding-top: 20px; */
   /* align-items: center; */
+  
+  /* background-color: red; */
 
 `
 
@@ -62,6 +68,46 @@ export const NavLink = styled.a`
   }
 
 `;
+
+export const BurgerDiv = styled.div`
+   background-color: pink;
+   position: relative;
+   top: -7px;
+   visibility: visible;
+   position: relative;
+   right: 60px;
+
+   @media (min-width: 430px) {
+    /* Styles for screens larger than 768px */
+     display: none;
+  }
+   @media (max-width: 374px) {
+    /* Styles for screens larger than 768px */
+    position: relative;
+    right: 66px;
+    background-color: red;
+    margin-right: 200px;
+  }
+   @media (max-width: 319px) {
+    /* Styles for screens larger than 768px */
+    position: relative;
+    right: 90px;
+  }
+  
+  /* visibility: hidden; */
+   /* width: 10%; */
+` 
+
+export const OpenLinksButton = styled(Hamburger)`
+    .hamburger-react{
+    /* span {
+      background-color: ${({ isOpen }) => (isOpen ? '#fff' : '#333')};
+    } */
+    
+  }
+`
+
+
 
 export const NavbarExtendedContainer = styled.div`
 

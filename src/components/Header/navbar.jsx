@@ -9,8 +9,12 @@ import {
   NavbarInnerContainer,
   NavMenu,
   NavMenuItem,
-  NavLink
+  NavLink,
+  OpenLinksButton,
+  BurgerDiv
 } from "../../components/Header/navbar.style";
+
+
 
 const MyNavbar = () => {
   return (
@@ -42,10 +46,19 @@ const MyNavbar = () => {
          <NavLink href="#projects">Projects</NavLink>
          </NavMenuItem>
          <NavMenuItem>
+         <NavLink href="#skills-parent">Skills</NavLink>
+         </NavMenuItem>
+         <NavMenuItem>
          <NavLink href="#exp-main">Experience</NavLink>
          </NavMenuItem>
          <NavMenuItem>Download resume</NavMenuItem>
+         
+         {/* <Hamburger size={24} /> */}
+         <BurgerDiv>
+         <OpenLinksButton size={24} className="hamburger-react"/>
+         </BurgerDiv>
         </NavMenu>
+        
         <NavbarExtendedContainer></NavbarExtendedContainer>
       </NavbarContainer>
       
