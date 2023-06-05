@@ -24,11 +24,6 @@ export const NavMenu = styled.ul`
   justify-content: space-evenly;
   position: relative;
   top: 20px;
-  left: 50px;
-  /* padding-top: 20px; */
-  /* align-items: center; */
-  
-  /* background-color: red; */
 
 `
 
@@ -51,8 +46,8 @@ export const NavLink = styled.a`
   height: 33px;
   width: auto;
   /* padding: 10px; */
-  padding-left: 10px;
-  padding-right: 10px;
+  /* padding-left: 10px; */
+  /* padding-right: 10px; */
   padding-top: 2px;
   /* background-color: red; */
   border-radius: 10px;
@@ -70,28 +65,29 @@ export const NavLink = styled.a`
 `;
 
 export const BurgerDiv = styled.div`
-   background-color: pink;
    position: relative;
    top: -7px;
    visibility: visible;
    position: relative;
-   right: 60px;
+   right: 20px;
+   background-color: grey;
+   border-radius: 10px;
+   color: white;
 
    @media (min-width: 430px) {
     /* Styles for screens larger than 768px */
      display: none;
   }
-   @media (max-width: 374px) {
+   @media (max-width: 376px) {
     /* Styles for screens larger than 768px */
     position: relative;
-    right: 66px;
-    background-color: red;
-    margin-right: 200px;
+    right: 35px;
+    /* margin-right: 150px; */
   }
-   @media (max-width: 319px) {
+   @media (max-width: 321px) {
     /* Styles for screens larger than 768px */
     position: relative;
-    right: 90px;
+    right: 55px;
   }
   
   /* visibility: hidden; */
