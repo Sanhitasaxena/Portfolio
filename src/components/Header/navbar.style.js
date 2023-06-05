@@ -3,7 +3,7 @@ import { Twirl as Hamburger } from 'hamburger-react'
 
 export const NavbarContainer = styled.nav`
 width: 100%;
-height: ${(props)=> ((props.extendNavbar)? "35vh" : "70px") };
+height: ${(props)=> ((props.extendNavbar)? "40vh" : "70px") };
 background-image: linear-gradient(rgb(252, 235, 235), rgb(138, 138, 147));
 overflow-x: hidden;
 `
@@ -90,8 +90,8 @@ export const NavbarExtendedContainer = styled.div`
   align-items: center;
   color: black;
 
-  position: relative;
-  top: -30px;
+  /* position: relative;
+  top: -10px; */
 
 `
 
