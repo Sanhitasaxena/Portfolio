@@ -3,7 +3,7 @@ import { Twirl as Hamburger } from 'hamburger-react'
 
 export const NavbarContainer = styled.nav`
 width: 100%;
-height: ${(props)=> ((props.extendNavbar)? "40vh" : "70px") };
+height: ${(props)=> ((props.extendNavbar)? "35vh" : "70px") };
 background-image: linear-gradient(rgb(252, 235, 235), rgb(138, 138, 147));
 overflow-x: hidden;
 `
@@ -59,7 +59,7 @@ export const BurgerDiv = styled.div`
    top: -7px;
    visibility: visible;
    position: relative;
-   right: 65px;
+   right: 75px;
    background-color: grey;
    border-radius: 10px;
    color: white;
@@ -69,11 +69,11 @@ export const BurgerDiv = styled.div`
   }
    @media (max-width: 376px) {
     position: relative;
-    right: 95px;
+    right: 105px;
   }
    @media (max-width: 321px) {
     position: relative;
-    right: 120px;
+    right: 130px;
   }
 
 ` 
@@ -91,7 +91,7 @@ export const NavbarExtendedContainer = styled.div`
   color: black;
 
   position: relative;
-  top: -12px;
+  top: -30px;
 
 `
 
