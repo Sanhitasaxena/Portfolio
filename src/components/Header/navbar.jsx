@@ -76,9 +76,9 @@ const MyNavbar = () => {
 
         { extendNavbar && 
         <NavbarExtendedContainer>
-          <NavExtendedLink>
+          {/* <NavExtendedLink>
             <NavLink href="/">Home</NavLink>
-          </NavExtendedLink>
+          </NavExtendedLink> */}
           <NavExtendedLink>
             <NavLink href="#projects">About</NavLink>
           </NavExtendedLink>
