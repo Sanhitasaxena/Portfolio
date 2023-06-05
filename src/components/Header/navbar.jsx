@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 // import { Navbar} from "react-bootstrap";
 // import { Nav } from "react-bootstrap";
 // import "../../components/Header/header.css"
@@ -11,12 +11,22 @@ import {
   NavMenuItem,
   NavLink,
   OpenLinksButton,
-  BurgerDiv
+  BurgerDiv,
+  NavExtendedLink
 } from "../../components/Header/navbar.style";
 
-
-
 const MyNavbar = () => {
+  const [extendNavbar, setExtendNavbar] = useState(false);
+
+  const handleClick = ()=>{
+    setExtendNavbar((curr) => !curr)
+    console.log("clicked")
+   
+  }
+
+  // useEffect(()=>{
+  //  console.log(extendNavbar? extendNavbar: "no")
+  // },[extendNavbar])
   return (
     <>
       {/* <Navbar> */}
@@ -34,34 +44,57 @@ const MyNavbar = () => {
       {/* </Nav> */}
       {/* </Navbar.Collapse> */}
       {/* </Navbar> */}
-      <NavbarContainer>
+      <NavbarContainer extendNavbar = {extendNavbar}>
         <NavMenu>
-         <NavMenuItem>
-          <NavLink href="/">Home</NavLink>
-         </NavMenuItem>
-         <NavMenuItem >
-         <NavLink href="#projects">About</NavLink>
-         </NavMenuItem>
-         <NavMenuItem>
-         <NavLink href="#projects">Projects</NavLink>
-         </NavMenuItem>
-         <NavMenuItem>
-         <NavLink href="#skills-parent">Skills</NavLink>
-         </NavMenuItem>
-         <NavMenuItem>
-         <NavLink href="#exp-main">Experience</NavLink>
-         </NavMenuItem>
-         <NavMenuItem>Download resume</NavMenuItem>
-         
-         {/* <Hamburger size={24} /> */}
-         <BurgerDiv>
-         <OpenLinksButton size={24} className="hamburger-react"/>
-         </BurgerDiv>
+          <NavMenuItem>
+            <NavLink href="/">Home</NavLink>
+          </NavMenuItem>
+          <NavMenuItem>
+            <NavLink href="#projects">About</NavLink>
+          </NavMenuItem>
+          <NavMenuItem>
+            <NavLink href="#projects">Projects</NavLink>
+          </NavMenuItem>
+          <NavMenuItem>
+            <NavLink href="#skills-parent">Skills</NavLink>
+          </NavMenuItem>
+          <NavMenuItem>
+            <NavLink href="#exp-main">Experience</NavLink>
+          </NavMenuItem>
+          <NavMenuItem>Download resume</NavMenuItem>
+
+          {/* <Hamburger size={24} /> */}
+          <BurgerDiv onClick={handleClick}>
+            <OpenLinksButton
+                // isOpen={isOpen}
+                // onClick={handleClick}
+              size={24}
+              className="hamburger-react"
+            />
+          </BurgerDiv>
         </NavMenu>
-        
-        <NavbarExtendedContainer></NavbarExtendedContainer>
+
+        { extendNavbar && 
+        <NavbarExtendedContainer>
+          <NavExtendedLink>
+            <NavLink href="/">Home</NavLink>
+          </NavExtendedLink>
+          <NavExtendedLink>
+            <NavLink href="#projects">About</NavLink>
+          </NavExtendedLink>
+          <NavExtendedLink>
+            <NavLink href="#projects">Projects</NavLink>
+          </NavExtendedLink>
+          <NavExtendedLink>
+            <NavLink href="#skills-parent">Skills</NavLink>
+          </NavExtendedLink>
+          <NavExtendedLink>
+            <NavLink href="#exp-main">Experience</NavLink>
+          </NavExtendedLink>
+          <NavExtendedLink>Download resume</NavExtendedLink>
+        </NavbarExtendedContainer>}
       </NavbarContainer>
-      
+       
     </>
   );
 };
