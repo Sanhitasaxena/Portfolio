@@ -48,31 +48,11 @@
    margin-left: 50px; 
 }
 
-/* #project1-desc, #project2-link, #project3-desc{
-    position: relative;
-    animation: mymove 5s infinite;
-    animation-timing-function: linear;
-}
-
-@keyframes mymove {
-    from {left: -150px;}
-    to {left: 45px;}
-  }
-
-#project3-link, #project2-desc, #project1-link{
-    position: relative;
-    animation: mymove 5s infinite;
-    animation-timing-function: linear;
-}
-
-@keyframes mymove {
-    from {right: -150px;}
-    to {right: 45px;}
-  }   */
 
   .vertical-timeline-element-icon{
     background-color: grey;
   }
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 430px){
     #project1, #project2, #project3{
@@ -87,5 +67,10 @@
         font-size: large;
         font-weight: bold;
     }
+    
+    #projectsHead{
+        font-family: 'League Spartan';
+    }
+
 }
 
