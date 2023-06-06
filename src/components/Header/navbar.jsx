@@ -9,6 +9,9 @@ import {
   BurgerDiv,
   NavExtendedLink,
 } from "../../components/Header/navbar.style";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { css } from "glamor";
 
 const MyNavbar = () => {
   const [extendNavbar, setExtendNavbar] = useState(false);
@@ -18,15 +21,27 @@ const MyNavbar = () => {
     console.log("clicked");
   };
 
+  const notify = () => {
+    console.log("toast")
+    toast("Oops..coming soon!", {
+      className: css({
+        background: "#00FF00 !important",
+        color: "white !important",
+        fontWeight: "bold"
+      })
+    })
+  };
+
   return (
-    <>
+    <><ToastContainer/>
       <NavbarContainer extendNavbar={extendNavbar}>
         <NavMenu>
           <NavMenuItem>
             <NavLink href="/">Home</NavLink>
           </NavMenuItem>
           <NavMenuItem>
-            <NavLink href="#projects">About</NavLink>
+            <NavLink
+            onClick={notify}>About</NavLink>
           </NavMenuItem>
           <NavMenuItem>
             <NavLink href="#projects">Projects</NavLink>
@@ -47,7 +62,8 @@ const MyNavbar = () => {
         {extendNavbar && (
           <NavbarExtendedContainer>
             <NavExtendedLink>
-              <NavLink href="#projects">About</NavLink>
+              <NavLink
+              onClick={notify}>About</NavLink>
             </NavExtendedLink>
             <NavExtendedLink>
               <NavLink href="#projects">Projects</NavLink>
