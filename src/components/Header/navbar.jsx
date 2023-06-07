@@ -12,6 +12,8 @@ import {
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { css } from "glamor";
+import Resume from "../../../src/resume.pdf"
+
 
 const MyNavbar = () => {
   const [extendNavbar, setExtendNavbar] = useState(false);
@@ -52,7 +54,9 @@ const MyNavbar = () => {
           <NavMenuItem>
             <NavLink href="#exp-main">Experience</NavLink>
           </NavMenuItem>
-          <NavMenuItem>Download resume</NavMenuItem>
+          <NavMenuItem>
+             <NavLink href={Resume} download="Sanhita_Resume.pdf">Download resume</NavLink>
+          </NavMenuItem>
 
           <BurgerDiv onClick={handleClick}>
             <OpenLinksButton size={24} className="hamburger-react" />
@@ -74,7 +78,9 @@ const MyNavbar = () => {
             <NavExtendedLink>
               <NavLink href="#exp-main">Experience</NavLink>
             </NavExtendedLink>
-            <NavExtendedLink>Download resume</NavExtendedLink>
+            <NavExtendedLink>
+            <NavLink href={Resume} download="Sanhita_Resume.pdf">Download resume</NavLink>
+            </NavExtendedLink>
           </NavbarExtendedContainer>
         )}
       </NavbarContainer>
