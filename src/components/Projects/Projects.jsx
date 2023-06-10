@@ -43,7 +43,9 @@ const Projects = () => {
                       )}
                     </div>
                     <div id="project1-link" className="col-md-4 col-sm-12 mt-4">
-                      <a href={item.live} className="btn btn-primary mt-4">
+                      <a href={item.live} 
+                      target="_blank"
+                      className="btn btn-primary mt-4">
                         VISIT WEBSITE
                       </a>
                       <br />

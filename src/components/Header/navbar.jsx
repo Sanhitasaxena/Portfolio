@@ -43,7 +43,8 @@ const MyNavbar = () => {
           </NavMenuItem>
           <NavMenuItem>
             <NavLink
-            onClick={notify}>About</NavLink>
+            onClick={notify}
+            >About</NavLink>
           </NavMenuItem>
           <NavMenuItem>
             <NavLink href="#projects">Projects</NavLink>
