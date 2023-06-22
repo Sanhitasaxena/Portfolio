@@ -8,10 +8,10 @@ export const ProjectsData = [
     },
     {
       "name": "ADD FRIENDS APP",
-       "live": "https://sanhitasaxena.github.io/add-friends-app/",
-       "sourceCode": "https://github.com/Sanhitasaxena/add-friends-app",
-       "techStack": "DOM Manipulation",
-       "img": require("../../assets/img/projects/add-frinds.png")  
+       "live": "https://codesandbox.io/s/busy-ives-fjzj6r?file=/src/App.js",
+       "sourceCode": "https://codesandbox.io/s/busy-ives-fjzj6r?file=/src/App.js",
+       "techStack": "React JS",
+       "img": require("../../assets/img/projects/addfrend2.png")  
     },
     {
       "name": "WEBSITE CLONE",
@@ -33,4 +33,5 @@ export const ProjectsData = [
        "techStack": "REACT JS",
        "img": require("../../assets/img/projects/portfolio.png")
     },
+   
 ]
