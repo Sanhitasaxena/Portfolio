@@ -33,5 +33,12 @@ export const ProjectsData = [
        "techStack": "REACT JS",
        "img": require("../../assets/img/projects/portfolio.png")
     },
+    {
+      "name": "HOLA CALCULATOR!",
+       "live": "https://codesandbox.io/s/blissful-sara-dpcx5w?file=/src/App.js",
+       "sourceCode": "https://codesandbox.io/s/blissful-sara-dpcx5w?file=/src/App.js" ,
+       "techStack": "REACT JS",
+       "img": require("../../assets/img/projects/calculator.png")
+    },
    
 ]
